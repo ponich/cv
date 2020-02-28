@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nikolay Ponich</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,700i&display=swap&subset=cyrillic');
+
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            outline: none;
+        }
+
+        body, html {
+            font-family: "Ubuntu Mono", sans-serif;
+            background: #fff;
+            color: #000;
+        }
+
+        .container {
+            width: 920px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            background: #000;
+            color: #fff;
+            padding: 0 0 0 15px;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 40px;
+        }
+
+        h2 {
+            background: #000;
+            color: #fff;
+            font-size: 20px;
+            padding: 0 15px 0 15px;
+            line-height: 20px;
+            font-weight: bold;
+            display: table;
+            margin-top: 2px;
+        }
+
+        .row {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        p {
+            margin: 2px 3px 3px 2px;
+        }
+
+        p.fl:first-letter {
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .line-bottom {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            display: block;
+        }
+
+        .contact-list {
+            text-align: right;
+        }
+
+        .contact-list li {
+            display: inline-block;
+        }
+
+        .contact-list li a {
+            padding: 3px;
+            color: #000;
+        }
+
+        .contact-list li a:hover {
+            color: #717171;
+            text-decoration: none;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 3px 0;
+        }
+
+        .table thead {
+            color: #fff;
+            background: #000;
+            text-transform: lowercase;
+        }
+
+        .table tr {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .link, a {
+            color: #0505ff;
+            text-decoration: none;
+            min-width: 101%;
+        }
+
+        .link:hover, a {
+            text-decoration: underline;
+        }
+
+        .link:before {
+            content: '☛';
+            color: red;
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .col-9 {
+            vertical-align: top;
+            display: inline-block;
+            width: 66%;
+        }
+
+        .col-6 {
+            vertical-align: top;
+            display: inline-block;
+            width: 49%;
+        }
+
+        .col-3 {
+            vertical-align: top;
+            display: inline-block;
+            width: 32%;
+        }
+
+        .profile-image {
+            max-width: 100%;
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+
+        .list {
+            list-style: none;
+            padding: 5px;
+        }
+
+        .list li {
+            padding: 5px;
+        }
+
+        .list li:before {
+            content: '¶ ';
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="col-3">
+        <div class="row">
+            <img class="profile-image" src="nikolay-ponich.jpg" alt="Nikolay Ponich">
+            <h2>Profile</h2>
+
+            <p>
+                Something about me
+            </p>
+
+            <h2>
+                Contact
+            </h2>
+
+            <p class="line-bottom">
+                email: <a href="mailto:nikolay@ponich.com" class="link">nikolay@ponich.com</a> <br>
+                tel: <a href="tel:+380959402560" class="link">+380959402560</a> <br>
+                skype: <a href="skype:nikolay.ponich?chat" class="link">nikolay.ponich</a> <br>
+                telegram: <a href="https://t.me/nponich" class="link" target="_blank">@nponich</a> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div class="row">
+            <h1>Nikolay Ponich</h1>
+
+            <ul class="contact-list line-bottom">
+                <li>
+                    <a href="mailto:nikolay@ponich.com" target="_blank">email</a>
+                </li>
+                <li>
+                    <a href="tel:+380959402560">phone</a>
+                </li>
+                <li>
+                    <a href="skype:nikolay.ponich?chat" target="_blank">skype</a>
+                </li>
+                <li>
+                    <a href="https://t.me/nponich" target="_blank">telegram</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ponich/" target="_blank">linkedin</a>
+                </li>
+                <li>
+                    <a href="https://github.com/ponich" target="_blank">github</a>
+                </li>
+                <li>
+                    <a href="https://ponich.com" target="_blank">site</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <h2>Experience</h2>
+            <ul class="list">
+                <li>
+                    2017 - today
+
+                    <p class="fl">
+                        .Net Developer
+                        <a href="https://geekgroupllc.com" class="link" target="_blank">Geekgroup</a>
+                    </p>
+
+                    <p>
+                        Разработка web приложений на платформе .NET. Сопровождения и поддержка Enterprise проектов.<br>
+                        Проектирование и разработка под Angular, инструмента для автоматизации создания статических веб приложений.
+                    </p>
+
+                    <p>
+                        <strong>
+                            .NET MVC; .Net Core; MSSQL; Angular; Github; CI/DI (jenkins, octopus); Windows
+                        </strong>
+                    </p>
+                </li>
+
+                <li>
+                    2014 - 2017
+
+                    <p class="fl">
+                        PHP Developer
+                        <a href="https://www.crmoz.com/" class="link" target="_blank">CRMOZ</a>
+                    </p>
+
+                    <p>
+                        Разработка программного обеспечения для интеграционных систем. Интеграция сервисов (телефония, прием платежей, рассылка,
+                        системы аналитики) в основной продукт.<br>
+                        Проектирование и разработка библиотеки для работы с данными CRM в режиме реального времени.
+                        Разработка системы мониторинга внешних подсистем, сервисов.
+
+                    </p>
+
+                    <p>
+                        <strong>
+                            PHP; PHPUnit; MySQL, Laravel; Symfony; Composer (dev); Vue; Bitbucket; Debian
+                        </strong>
+                    </p>
+                </li>
+
+                <li>
+                    2012 - 2014
+
+                    <p class="fl">
+                        PHP Developer
+                        <a href="#" class="link" target="_blank">Yugo.Web</a>
+                    </p>
+                </li>
+            </ul>
+
+            <h2>Education</h2>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Course</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2019</td>
+                    <td>2020</td>
+                    <td>English School - Intermediate Level</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>2019</td>
+                    <td>English School - Pre Intermediate Level</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>2015</td>
+                    <td>JavaScript Online Course</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>2014</td>
+                    <td>PHP Courses</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>2009</td>
+                    <td>
+                        Kyiv Polytechnic Institute<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td>2008</td>
+                    <td>
+                        Kyiv Polytechnic Lyceum<br>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2>Skills</h2>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
