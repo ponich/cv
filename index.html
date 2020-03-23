@@ -158,6 +158,33 @@
             content: '¶ ';
         }
 
+        .tag-list {
+            padding-top: 5px;
+        }
+
+        .tag {
+            background: #282828;
+            color: #fff;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        .about-text {
+
+        }
+
+        .about-text p {
+            padding: 3px;
+        }
+
+        blockquote{
+            margin-left: 5px;
+            padding-left: 10px;
+            text-transform: uppercase;
+            border-left: 2px solid #ccc;
+            text-align: center;
+        }
+
         @media (max-width: 800px) {
             .container {
                 width: 90%;
@@ -184,9 +211,39 @@
             <img class="profile-image" src="nikolay-ponich.jpg" alt="Nikolay Ponich">
             <h2>Profile</h2>
 
-            <p>
-                Something about me
-            </p>
+            <div class="about-text">
+                <p>
+                    <!--                    Привет, меня зовут Николай, мне 29 лет. Последнии 7 лет занимаюсь веб разработкой. За это время научился работать в команде, брать на себя ответственность и понимать реально что в моих силах.-->
+
+                    Hi. My name is Nikolay, I'm 29 years old. I have been doing web developing for 7 years. During this
+                    time I learned how to work with team together, to take responsibility and understand what I can do.
+                </p>
+
+                <p>
+                    <!--                    Долгое время работал непосредственно в онлайн коммерции. Собирали, анализировали данные; высчитывали лидов; делали интересные “плюшки” для автоматизации.-->
+
+                    I've worked in online commerce for a long time. We were collecting and analyzing data; Calculated
+                    contact leads and their temperature; made interesting "goodies" for automatization of the systems.
+                </p>
+
+                <p>
+                    <!--                    Люблю: open source, morrowind, монополию и рок.-->
+
+                    Like: open source, morrowind, monopoly and rock.
+                </p>
+
+                <p>
+                    <!--                    Полтора года назад переехал в Одессу. Осваиваю новый стек, завожу друзей и любуюсь на закаты.-->
+
+                    I've moved to Odessa 1.5 year ago. I'm coping with my new stack, making new friends and delighting
+                    in sunsets.
+                </p>
+
+                <p>
+<!--                    Во имя Open Source и святого MIT-->
+                    <blockquote>In the name of Open Source and holy MIT</blockquote>
+                </p>
+            </div>
 
             <h2>
                 Contact
@@ -242,8 +299,12 @@
                     </p>
 
                     <p>
-                        Разработка web приложений на платформе .NET. Сопровождения и поддержка Enterprise проектов.<br>
-                        Проектирование и разработка под Angular, инструмента для автоматизации создания статических веб приложений.
+<!--                        Разработка web приложений на платформе .NET. Сопровождения и поддержка Enterprise проектов.<br>-->
+<!--                        Проектирование и разработка под Angular, инструмента для автоматизации создания статических веб-->
+<!--                        приложений.-->
+
+                        Developing web applications for .NET platforms. Fallowing and supporting the projects of Enterprise. Designing and developing special online service for making static web applications.
+
                     </p>
 
                     <p>
@@ -262,10 +323,14 @@
                     </p>
 
                     <p>
-                        Разработка программного обеспечения для интеграционных систем. Интеграция сервисов (телефония, прием платежей, рассылка,
-                        системы аналитики) в основной продукт.<br>
-                        Проектирование и разработка библиотеки для работы с данными CRM в режиме реального времени.
-                        Разработка системы мониторинга внешних подсистем, сервисов.
+<!--                        Разработка программного обеспечения для интеграционных систем. Интеграция сервисов (телефония,-->
+<!--                        прием платежей, рассылка,-->
+<!--                        системы аналитики) в основной продукт.<br>-->
+<!--                        Проектирование и разработка библиотеки для работы с данными CRM в режиме реального времени.-->
+<!--                        Разработка системы мониторинга внешних подсистем, сервисов.-->
+                        Developing software for integration systems. Integration services of VoIP, payment systems, mailing.
+                        Designing and developing of libraries for manipulating with CRM data in realtime.
+                        Developing of system for monitoring remote systems and services
 
                     </p>
 
@@ -283,6 +348,17 @@
                         PHP Developer
                         <a href="#" class="link" target="_blank">Yugo.Web</a>
                     </p>
+
+                    <p>
+<!--                        Разработка и поддержка сайтов. Работа с API социальных сетей. Верстка макетов сайтов с PSD-->
+<!--                        шаблонов, в том числе Pixel Perfect и адаптация под устройства.-->
+
+                        Developing and supporting sites. Working with API of social networks. Making templates of site created by Adobe Photoshop, including Pixel Perfect and responsive application.
+                    </p>
+
+                    <p>
+                        <strong>PHP, CodeIgniter; Cohana; NodeJS; Wordpress (making plugins)</strong>
+                    </p>
                 </li>
             </ul>
 
@@ -299,7 +375,7 @@
                 <tbody>
                 <tr>
                     <td>2019</td>
-                    <td>2020</td>
+                    <td>today</td>
                     <td>English School - Intermediate Level</td>
                 </tr>
                 <tr>
@@ -315,7 +391,7 @@
                 <tr>
                     <td>2013</td>
                     <td>2014</td>
-                    <td>PHP Courses</td>
+                    <td>Laravel Courses</td>
                 </tr>
                 <tr>
                     <td>2008</td>
@@ -335,6 +411,25 @@
             </table>
 
             <h2>Skills</h2>
+
+            <p class="tag-list">
+                <span class="tag">git</span>
+                <span class="tag">linux</span>
+                <span class="tag">nodejs</span>
+                <span class="tag">bash</span>
+                <span class="tag">mysql</span>
+                <span class="tag">javascript</span>
+                <span class="tag">jetbrains products</span>
+                <span class="tag">sass</span>
+                <span class="tag">scss</span>
+                <span class="tag">vue</span>
+                <span class="tag">angular</span>
+                <span class="tag">laravel</span>
+                <span class="tag">mvc</span>
+                <span class="tag">psd pixel perfect</span>
+                <span class="tag">crm</span>
+                <span class="tag">asterisk</span>
+            </p>
         </div>
 
     </div>
