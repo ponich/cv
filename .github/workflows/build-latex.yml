@@ -1,0 +1,50 @@
+name: Build LaTeX CV
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Docker Buildx
+      uses: docker/setup-buildx-action@v3
+      
+    - name: Build Docker image
+      run: docker build -t cv-builder .
+      
+    - name: Compile LaTeX CV
+      run: |
+        docker run --rm \
+          -v "${{ github.workspace }}/mcdowell-cv:/data" \
+          -v "${{ github.workspace }}/fonts:/usr/share/fonts/truetype/custom" \
+          cv-builder lualatex cv.tex
+          
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: cv-pdf
+        path: mcdowell-cv/cv.pdf
+        retention-days: 90
+        
+    - name: Create Release on Tag
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: mcdowell-cv/cv.pdf
+        body: |
+          Automatically generated CV PDF for version ${{ github.ref_name }}.
+          
+          ## Direct PDF Link
+          You can also access the latest PDF directly using nightly.link:
+          [Download Latest CV PDF](https://nightly.link/${{ github.repository }}/workflows/build-latex/main/cv-pdf.zip)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
